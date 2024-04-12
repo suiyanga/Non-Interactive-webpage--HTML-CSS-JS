@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisengo United Sacco</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+        <style>
+            /* You can add custom styles here if needed */
+            .bg-container {
+                position: relative;
+            }
+    
+            .bg-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0.9; /* Adjust the opacity as needed */
+            }
+            .nav-bar {
+                background-color: #b3acace3; /* Semi-transparent background */
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                max-height: 130px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 10px;
+                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+                z-index: 100;
+                opacity: 0.7;
+            }
+    
+            .logo {
+                width: 160px; /* Increase the width to make the logo larger */
+                height: auto; /* Allow the height to adjust proportionally */ /* Add margin for spacing */
+            }
+    
+            .nav-links {
+                display: flex;
+                align-items: center;
+            }
+    
+            .nav-links a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 20px; /* Adjust the spacing between links as needed */
+            }
+            .font-custom-heading {
+                 font-family: 'EB Garamond', sans-serif;
+                }
+  
+        </style>
+</head>
+<body>
+    <div class="bg-container relative">
+        <img src="images/image4.jpg" alt="Background Image" class="bg-image">
+        <div class="nav-bar">
+            <img src="images/image1.png" alt="Logo" class="logo w-32 h-auto">
+            <div class="absolute inset-x-0 top-10 flex items-center justify-center">
+                <h1 class="text-3xl font-custom-heading text-white">KISENGO UNITED SACCO</h1>
+            </div>
+            <div class="nav-links ml-4">
+                <ul class="list-none flex">
+                    <li class="px-5"><a href="/">Home</a></li>
+                    <li class="px-5"><a href="/about.html">About Us</a></li>
+                    <li class="px-5"><a href="#contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-cols-3 gap-8 p-4 content-container absolute inset-0 bg-black bg-opacity-50 top-0 flex items-center justify-center -mt-80 ">
+        <div class="w-1/4 h-96 bg-green-200 p-4 shadow-xl rounded-lg text-center flex flex-col justify-center items-center opacity-70 border border-gray-300">
+            <h2 class="text-4xl font-custom-heading text-white mt-4 ">MOTTO</h2>
+            <p class="text-xl font-custom-heading">Together We Can</p>
+        </div>
+        <div class="w-1/4 h-96 bg-blue-200 p-4 shadow-xl rounded-lg text-center flex flex-col justify-center items-center opacity-70 border border-gray-300">
+            <h3 class="text-4xl font-custom-heading text-white mt-4">VISION</h3>
+            <p class="text-xl font-custom-heading">To improve members quality of life through financial empowerment</p>
+        </div>
+        <div class="w-1/4 h-96 bg-red-200 p-4 shadow-xl rounded-lg text-center flex flex-col justify-center items-center opacity-70 border border-gray-300">
+            <h4 class="text-4xl font-custom-heading text-white mt-4">MISSION</h4>
+            <p class="text-xl font-custom-heading ">To mobilize resources, invest and offer quality financial services</p>
+        </div>
+        </div>
+        <div id="contact-us" class="bg-gray-800 p-6 text-white text-center">
+            <h2 class="text-4xl font-custom-heading">Contact Us</h2>
+            <div class="mt-4">
+                <p class="text-xl">For inquiries and support, please contact us at:</p>
+                <p>Email: unitedsacco@gmail.com</p>
+                <p>Phone: +254 744 444 444</p>
+                <p>Road Building; 1st floor, Kiserian, Kajiado</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                const targetId = this.getAttribute('href').substring(1);
+                const target = document.getElementById(targetId);
+    
+                if (target) {
+                    const yOffset = -80; // Adjust the value based on your layout
+                    const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                }
+            });
+        });
+    </script>    
+</body>
+</html>
