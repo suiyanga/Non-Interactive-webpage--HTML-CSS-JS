@@ -40,7 +40,4 @@ To view the webpage, simply open the `index.html` file in a web browser. Since i
 
 Contributions to enhance the webpage or fix any issues are welcome. If you'd like to contribute, feel free to fork the repository, make your changes, and submit a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
