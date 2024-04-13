@@ -34,7 +34,7 @@ The file structure of the project is as follows:
 
 ## Usage
 
-To view the webpage, simply open the `index.html` file in a web browser. Since it's non-interactive, there are no further actions required.
+To view the webpage, simply open the `index.html` file in a web browser. Since it's non-interactive, there are no further actions required or 
 Type `http-server` on your terminal after opening the project folder on your IDE to view the webpage.
 
 ## Contributing
